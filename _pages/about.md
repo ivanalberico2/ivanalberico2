@@ -6,11 +6,11 @@ subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile_picture.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <p>Via Michele Lener 108</p>
-    <p>Marcianise (CE), 81025, Italy</p>
+    <p>Marcianise 81025, Italy</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
