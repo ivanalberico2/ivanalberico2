@@ -72,6 +72,14 @@ layout: default
 
             </div>
           {%- endif %}
+
+          {% if page.projects -%}
+          <p><!-- Selected papers -->
+            {%- include myprojects.html %}
+          </p>
+          {%- endif %}
+          <br>
+          
         </article>
 
 </div>

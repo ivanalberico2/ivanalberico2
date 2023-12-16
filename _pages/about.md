@@ -20,9 +20,10 @@ personal: true
 projects: true
 
 ---
-
-Email: ivanalberico1998@gmail  |  Github: [ivanalberico](https://github.com/ivanalberico)  |  Linkedin: [Ivan Alberico](https://www.linkedin.com/in/ivan-alberico-5793581a4/)
-
 Originally from Italy, I have successfully completed my MSc in Robotics, Systems, and Control at ETH Zürich in October 2023. I am currently seeking admission into a PhD program to further advance my academic career and contribute to cutting-edge research in the areas of computer vision, deep learning and state estimation.
 
 I am an enthusiastic, motivated and hard working person. I am an excellent team worker and I am able to take instructions from all levels. I am able to work well under pressure and adhere to strict deadlines.
+
+Email: ivanalberico1998@gmail
+Github: [ivanalberico](https://github.com/ivanalberico)
+Linkedin: [Ivan Alberico](https://www.linkedin.com/in/ivan-alberico-5793581a4/)
