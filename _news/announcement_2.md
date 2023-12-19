@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2023-01-15
+date: 2020-7
 inline: true
 ---
 
-I start as a research assistant at <a href="https://ait.ethz.ch/">Advanced Interactive Technologies (AIT)</a> advised by <a href="https://xiwang1212.github.io/homepage/">Dr. Xi Wang</a>, working on Human Object Interaction.
+I have obtained my Bachelor's Degree in Automation Engineering at University of Bologna.

@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2021-9-10
+date: 2019-8
 inline: true
 ---
 
-I join in <a href="https://rpg.ifi.uzh.ch/">Robotics and Perception Group (RPG)</a>.
+End of my Double Degree program in Shanghai, China.
