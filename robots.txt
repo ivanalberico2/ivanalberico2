@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://ivanalberico2.github.io/sitemap.xml
+Sitemap: https://tenhearts.github.io/sitemap.xml
