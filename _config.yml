@@ -67,11 +67,11 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: tenhearts # your GitHub user name
+github_username: ivanalberico # your GitHub user name
 gitlab_username: # your GitLab user name
-twitter_username: teenhaci # your Twitter handle
+twitter_username: # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: kexin-shi-a1a9151a6 # your LinkedIn user name
+linkedin_username: ivan-alberico-5793581a4 # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: -E1AyF0AAAAJ&hl=en # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
@@ -232,8 +232,8 @@ display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will
 
 scholar:
 
-  last_name: [Shi]
-  first_name: [Kexin]
+  last_name: [Alberico]
+  first_name: [Ivan]
 
   style: apa
   locale: en
