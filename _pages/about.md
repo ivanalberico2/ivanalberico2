@@ -24,10 +24,8 @@ I have recently completed an internship at [NASA Jet Propulsion Laboratory](http
 
 I am an enthusiastic, motivated and hard working person. I am an excellent team worker and I am able to take instructions from all levels. I am able to work well under pressure and adhere to strict deadlines.
 
-**Email**: ivanalberico1998@gmail.com
-
-**Github**: [ivanalberico](https://github.com/ivanalberico)
-
+**Email**: ivanalberico1998@gmail.com  |
+**Github**: [ivanalberico](https://github.com/ivanalberico) |
 **Linkedin**: [Ivan Alberico](https://www.linkedin.com/in/ivan-alberico-5793581a4/)
 
 
