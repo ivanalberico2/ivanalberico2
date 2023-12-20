@@ -1,0 +1,219 @@
+---
+layout: default
+---
+
+<!-- <!DOCTYPE html> -->
+<html>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <!-- <div class="columns is-centered">
+        <div class="column is-7 has-text-centered">
+          <img src="media/nice-slam/nice-slam-logo2.png" alt="NICE-SLAM"/>
+        </div>
+      </div> -->
+        <div class="column has-text-centered">
+          <!-- <h1 class="title is-1 publication-title"><img src="media/nice-slam/like.png" width="90">NICE-SLAM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>Neural Implicit Scalable Encoding for SLAM</h1> -->
+          <!-- <h1 class="title is-1 publication-title"><img src="media/openscene/logo.png" width="70">OpenScene&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1> -->
+          <h1 align="center" class="title is-1 publication-title"><b>Vision-Based Navigation for Mid-Air<br>Helicopter Delivery on Mars</b></h1>
+          <div class="column is-full_width">
+            <!-- <h2 align="center" class="title is-4">Master Project</h2> -->
+          </div>
+          <br>
+          <div align="center" class="is-size-5 publication-authors">
+              <!-- <span class="author-block"> -->
+                <h5 align="center" class="title is-1 publication-title">
+                  <b>
+                <!-- <a href="https://pengsongyou.github.io">Songyou Peng</a><sup>1,2,3 * </sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                <a href="https://ivanalberico.github.io/">Ivan Alberico</a></span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <!-- </span> -->
+              <span class="author-block">
+              <a href="https://www-robotics.jpl.nasa.gov/who-we-are/people/jeff_delaune/">Jeff Delaune</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+              </span>
+            <span class="author-block">
+              <a href="https://giovanni-cioffi.netlify.app/">Giovanni Cioffi</a></span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://rpg.ifi.uzh.ch/people_scaramuzza.html">Davide Scaramuzza</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            </b>
+            <br><br>
+            <span class="author-block"><a href="https://www.jpl.nasa.gov/">NASA Jet Propulsion Laboratory</a></span>
+            <span class="author-block"><a href="https://rpg.ifi.uzh.ch/index.html/">Robotics and Perception Group (RPG)</a></span>
+            </h5>
+          </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- <div align="center"><img src="assets/img/mp.gif" width="90%" class="center"/></div> -->
+    <br><hr>
+      <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <br>
+        <h2 align="center" class="title is-3"><b>Abstract</b></h2>
+        <div class="content has-text-justified">
+          <p>
+            In the realm of Mars robotics exploration, the groundbreaking Mid-Air Helicopter Delivery (MAHD) 
+            mission concept represents a paradigm shift in Entry, Descent, and Landing (EDL), introducing a 
+            revolutionary approach to deploy drones on the Red Planet. Unlike its predecessors, MAHD leverages 
+            a jetpack to decelerate the Mars Science Helicopter (MSH) after separation from the backshell, 
+            allowing it to achieve the ideal conditions for helicopter take-off in mid air. While the MAHD 
+            mission concept promises significant benefits, including cost reduction, access to challenging 
+            terrains, and increased payload capacity, its ambitious goals also give rise to a distinct set 
+            of challenges, particularly within the domain of monocular visual-odometry frameworks employed 
+            for the navigation of these technologies. 
+          </p>
+
+          <video width="640" height="360" controls>
+            <source src="assets/img/nasajpl_mars2020landing.mp4" type="video/mp4">
+          </video>
+
+          <p>
+            In this work, we conduct an extensive analysis of the range-VIO method under the challenging 
+            conditions of MAHD. The investigation takes place in a custom simulation environment designed 
+            to replicate the intricate complexities of Mars landscapes, including rough terrain with steep 
+            elevation slopes and high-altitude trajectories starting at 12 kilometers above the Martian surface. 
+            The findings from our study reveal a critical limitation in the existing range-VIO approach, 
+            particularly when applied to high altitudes and on highly non-planar terrains, where the assumption 
+            of local planarity becomes significantly violated, leading to performance degradation. To address 
+            this issue, we propose an innovative alternative to the range-VIO method that eliminates the need 
+            for any type of ground planarity assumption, making it adaptable to any terrain structure, while 
+            still being able to observe scale and mitigate error drift under constant-velocity motion and without 
+            relying on prior maps. We provide a robust evaluation of this novel implementation, demonstrating its 
+            effectiveness in a realistic simulation environment. By conducting exhaustive assessments using flight 
+            data representative of MAHD's scenarios, we highlight the potential benefits and enhanced performance 
+            of this new approach, paving the way for more adaptable and efficient navigation systems in the context 
+            of Mars exploration.
+    
+          </p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+    
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <!-- <div class="column is-four-fifths"> -->
+        <div class="column is-full_width">
+          <hr><br>
+        <h2 align="center" class="title is-3"><b>Video</b></h2>
+        <br>
+        <div align="center" class="video-container">
+          <!-- <iframe src="https://www.youtube.com/embed/4saCcrD37qA"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/4saCcrD37qA?controls=0" title="YouTube video player" 
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!-- </video> -->
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+    <br>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Key Idea -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <hr>
+        <br>
+        <h2 align="center" class="title is-3"><b>Key Idea</b></h2>
+        <br>
+        <div align="center"><img src="assets/img/plr_key.png" width="60%" class="center"/></div>
+        <div class="content has-text-justified">
+          <br>  
+          <p>
+            The way to achieve the final result comprises the following two building blocks:
+            <li>Generate an accurate dataset including RGB images and ground truth 6D pose of the base of ANYmal;</li>
+            <li>Train a 6D pose estimation network on the generated dataset with supervised learning.</li>
+            <br>
+            For detailed information, please refer to <a href="assets/pdf/plr_poster.pdf">poster</a> and <a href="assets/pdf/plr_report.pdf">report</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    
+      <!-- Method -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <br>
+          <h2 align="center" class="title is-3"><b>Dataset Generation</b></h2>
+          <br>
+          <!-- <div align="center"><img src="assets/img/pvcnn_rq.png" width="90%" class="center"/></div> -->
+          <div class="content has-text-justified">
+            <p>
+              The ground truth poses of the base of ANYmal are generated by detecting AprilTags attached to a mounting fixed on top of the robot by leveraging the 
+              ROS package <a href="http://wiki.ros.org/apriltag_ros">apriltag_ros</a>. Then the position and quaternion is averaged between multiple faces detected 
+              in the same frame to reduce jitter.
+              <br>
+              <table><tr>
+                <td><img src=assets/img/plr1.gif border=0 width="100%" ></td>
+                <td><img src=assets/img/plr2.gif border=0 width="100%" ></td>
+                </tr></table>   
+            <br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <br>
+          <h2 align="center" class="title is-3"><b>Pose Estimation</b></h2>
+          <br>
+          
+          <div class="content has-text-justified">
+            <!-- <br>   -->
+            <p>
+              We adapt one of the state-of-the-art method for 6D pose estimation called <a href="https://arxiv.org/abs/2011.04307">EfficientPose</a> on the generated dataset.
+              <div align="center"><img src="assets/img/plr_network.png" width="60%" class="center"/></div>
+            </p>
+          </div>
+          <br>
+        </div>
+      </div>
+      <hr>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <br>
+          <h2 align="center" class="title is-3"><b>Results</b></h2>
+          <br>
+          <!-- <div align="center"><img src="assets/img/pvcnn_rq.png" width="90%" class="center"/></div> -->
+          <div class="content has-text-justified">
+            <table><tr>
+              <td><img src=assets/img/plr3.gif border=0 width="100%" ></td>
+              <td><img src=assets/img/plr4.gif border=0 width="100%" ></td>
+              </tr></table> 
+            <table><tr>
+              <td><img src=assets/img/plr5.gif border=0 width="100%" ></td>
+              <td><img src=assets/img/plr6.gif border=0 width="100%" ></td>
+              </tr></table> 
+          </div>
+          <br>
+        </div>
+      </div>
+      
+
+
+</div>
+</section>
+
+
+
+
+</body>
+</html>
