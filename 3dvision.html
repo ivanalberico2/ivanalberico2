@@ -1,0 +1,222 @@
+---
+layout: default
+---
+
+<!-- <!DOCTYPE html> -->
+<html>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+        <div class="column has-text-centered">
+          <h1 align="center" class="title is-1 publication-title"><b>End-2-End Self-Supervised SLAM</b></h1>
+          <div class="column is-full_width">
+            <!-- <h2 align="center" class="title is-4">Master Project</h2> -->
+          </div>
+          <br>
+          <div align="center" class="is-size-5 publication-authors">
+              <!-- <span class="author-block"> -->
+                <h5 align="center" class="title is-1 publication-title">
+                  <b>
+                <a href="https://ivanalberico.github.io/">Ivan Alberico</a></span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <!-- </span> -->
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/akbar96/">Mian Akbar Shah</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+              </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/selim-kaelin-947887172/">Selim Kaelin</a></span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/emilk-sempertegui-9b7719100/">Emilk Sempertegui</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            </b>
+            <br><br>
+            <span class="author-block"><a href="https://cvg.ethz.ch/">Computer Vision and Geometry LAB, ETH Zurich</a></span>
+            </h5>
+          </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- <div align="center"><img src="assets/img/mp.gif" width="90%" class="center"/></div> -->
+    <br><hr>
+      <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <br>
+        <h2 align="center" class="title is-3"><b>Abstract</b></h2>
+        <div class="content has-text-justified">
+          <p>
+            Dense monocular SLAM is a challenging task since 3D structures reconstructed from monocular images are often sparse and It
+            is not easy to recover reliable 3D information for non-textured regions in real-time. The use of a depth prediction network within a
+            SLAM pipeline has been proposed to improve dense reconstructions (<a href="https://www.computer.org/csdl/proceedings-article/cvpr/2017/0457g565/12OmNzTH0Qa">CNN-SLAM</a>), 
+            however, deep learning models suffer from drops in accuracy on scenes not similar to the training ones (domain shifts).
+
+            We present End-2-End Self-Supervised SLAM, a pipeline combining <a href="https://gradslam.github.io/">gradSLAM</a>, which enables
+            SLAM systems to be posed as differentiable computational graphs, and online adaption to 
+            boost performance on indoor scenes. We train and test on two different datasets, implement 
+            an online adaptation module for refinement, explore the usage of uncertainty predictions 
+            and unsupervised scale learning, and supplement our work with experiments on weak supervision. 
+            Our framework generalizes well to previously unknown scenes, and through the online adaptation 
+            module we successfully address challenges related to indoor self-supervised depth estimation.
+
+          </p>
+
+          <br>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+      <!-- Introduction -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <br>
+          <h2 align="center" class="title is-3"><b>Introduction</b></h2>
+          <br>
+          <div class="content has-text-justified">
+            <p>
+              A drawback of supervised deep networks, is that they need large labeled datasets to be 
+              properly trained. Creating labeled datasets for each of the countless SLAM applications 
+              is a laborious and expensive effort, which is why research has recently focused on some 
+              form of self-supervision
+
+              The main challenges of self-supervised depth predition, especially in the context of indoor 
+              scenes, with which we are mainly concerned, are the following:
+              
+              <li>Abundance of non-Lambertian surfaces and low-texture scenes that do not provide 
+                meaningful gradients.</li>
+              <li>High degree of rotational movement in camera motion, which acts as noise.</li>
+              <li>Scale inconsistency of pose estimates over different samples</li>
+
+              In this work, we outline the following contributions:
+
+              <li>A self-supervised SLAM system based on PointFusion with gradient based learning.</li>
+              <li>Implementation of an online adaptation module to refine our self-supervised depth predictions.</li>
+              <li>Investigation into uncertainty predictions, scale learning and output fine-tuning to improve 
+                depth estimation and reconstruction.</li>
+            <br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <hr>
+
+      <!-- Method -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <br>
+          <h2 align="center" class="title is-3"><b>Method</b></h2>
+          <br>
+          <div class="content has-text-justified">
+            <p>
+              In this section we provide a detailed insight into our online adaption module which is basically self-supervised 
+              depth estimation through novel view synthesis. We first explain the basic building blocks for self-supervised 
+              depth estimation and then present self-supervision from the global point cloud created by the 
+              <a href="https://arxiv.org/pdf/1711.10871.pdf">PointFusion</a> method.
+
+              <br>
+              <div align="center"><img src="assets/img/3dvision_FullModel.PNG" width="100%" class="center"/></div>
+              <br>
+
+              Due to the differentiable nature of gradSLAM, we can leverage the global reconstructed pointcloud to refine 
+              our depth maps in an online fashion. This task can be easily coupled with the novel view synthesis framework 
+              from the previous section. However, since we will compare pointclouds, this supervision incurs additional cost 
+              at each refinement step. The global pointcloud $G$ contains points that are updated after online adaption has 
+              been applied to the previous key-frames. Subsequently, these points are also refined through depth map fusion 
+              within the PointFusion based SLAM. Therefore, these points can be used to supervise future key-frames. 
+
+            <br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Results -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <br>
+          <h2 align="center" class="title is-3"><b>Results</b></h2>
+          <br>
+          <div class="content has-text-justified">
+            <p>
+              In this section we provide experimental results to validate the effectiveness of online refinement module along
+              with the corresponding 3D reconstruction from PointFusion. Note that all experiments were carried out with median 
+              scaling unless otherwise specified.
+
+<table><tr>
+  <td>
+    Depth predictions and reconstructed point clouds of a pair of key-frames taken from the ICL dataset.
+     <b>Left</b>: Ground truth <b>Center</b>: No online-refinement <b>Right</b>: Online-refinement
+     <div align="center"><img src="assets/img/3dvision_ICL_Results.PNG" width="100%" class="center"/></div>
+
+  </td>
+</tr></table> 
+
+<table><tr>
+  <td>
+    Depth predictions and reconstructed point clouds of a pair of key-frames taken from the TUM dataset. 
+    <b>Left</b>: Ground truth <b>Center</b>: No online-refinement <b>Right</b>: Online-refinement
+    <div align="center"><img src="assets/img/3dvision_TUM_Results.PNG" width="100%" class="center"/></div>
+  </td>
+  </tr></table>  
+
+
+  An addition to our method consists of integrating weak-supervision into the pipeline through ground truth depth 
+  information. We wanted to investigate the effectiveness of having pseudo-labels from old classic techniques, that 
+  could act as a supervisory signal for the depth predictions. However, due to time constraints we relied on sparse 
+  ground truth depth labels. In our case we used only 1% of the total amount of pixels. The weak supervision is 
+  integrated in our model through an L1 loss computed between the sparse ground truth values and the depth predictions 
+  from our network.
+
+<table><tr>
+  <td>
+    The sequence of images shows a comparison between the ground truth depth map and the depth prediction after including
+    weak-supervision into the pipeline (1% of the pixels). The selected keyframe is taken from the ICL-NUIM dataset. 
+    (a) Ground truth depth map (b) Sparse ground truth values (c) Predicted depth map.
+     <div align="center"><img src="assets/img/3dvision_weak-supervision.png" width="100%" class="center"/></div>
+
+  </td>
+</tr></table>
+
+<table><tr>
+  <td>
+    Comparison between global pointcloud reconstructions without (left) and with (right) weak supervision of a sequence of
+    frames taken from the ICL-NUIM dataset.
+     <div align="center"><img src="assets/img/3dvision_comparison-demo-ICL.png" width="100%" class="center"/></div>
+
+  </td>
+</tr></table>
+
+
+            <br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+
+
+</div>
+</section>
+
+
+
+</body>
+</html>
