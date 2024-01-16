@@ -1,0 +1,110 @@
+---
+layout: default
+---
+
+<!-- <!DOCTYPE html> -->
+<html>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <!-- <div class="columns is-centered">
+        <div class="column is-7 has-text-centered">
+          <img src="media/nice-slam/nice-slam-logo2.png" alt="NICE-SLAM"/>
+        </div>
+      </div> -->
+        <div class="column has-text-centered">
+          <!-- <h1 class="title is-1 publication-title"><img src="media/nice-slam/like.png" width="90">NICE-SLAM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>Neural Implicit Scalable Encoding for SLAM</h1> -->
+          <!-- <h1 class="title is-1 publication-title"><img src="media/openscene/logo.png" width="70">OpenScene&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1> -->
+          <h1 align="center" class="title is-1 publication-title"><b>Planning and Decision Making <br>for Autonomous Robots</b></h1>
+          <div class="column is-full_width">
+            <!-- <h2 align="center" class="title is-4">Master Project</h2> -->
+          </div>
+          <br>
+          <div align="center" class="is-size-5 publication-authors">
+              <!-- <span class="author-block"> -->
+                <h5 align="center" class="title is-1 publication-title">
+                  <b>
+              <span class="author-block">
+              <a href="https://ivanalberico.github.io/">Ivan Alberico</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+              </span>
+            </b>
+            <br><br>
+            <span class="author-block"><a href="https://idsc.ethz.ch/research-frazzoli.html/">Institute for Dynamic Systems and Control, ETHz</a></span>
+            </h5>
+          </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- <div align="center"><img src="assets/img/mp.gif" width="90%" class="center"/></div> -->
+    <br><hr>
+      <!-- Task. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <br>
+        <h2 align="center" class="title is-3"><b>Task</b></h2>
+        <div class="content has-text-justified">
+
+          <img align="right" height="270" src="assets/img/pdmar_world.png"></img>
+
+          <p>Control a spacecraft to safely reach the goal region, moving through an environment full of static and dynamic obstacles. 
+          The spacecraft has a left and a right thruster at the back that can be activated to move forward or backward.  
+          The simulator provides observations about the state of the spacecraft and of the moving obstacles which correspond to the real state of the simulation.  
+          Optimize the distance traveled, the final time, and the actuation effort.</p>
+
+          <br/>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- Pipeline. -->
+    <div class="columns is-centered has-text-centered">
+      <!-- <div class="column is-four-fifths"> -->
+        <div class="column is-full_width">
+          <hr><br>
+        <h2 align="center" class="title is-3"><b>Pipeline</b></h2>
+        <br>
+
+          <ul>
+            <li>To complete the task, at the beginning of the simulation an Informed RRT* algorithm is applied to the static environment only, to obtain the global path the spacecraft has to follow to reach the goal region, given a safe margin from obstacles. The global path found is then smoothed.</li>
+            <li>A MPC is exploited to calculate an optimal local trajectory to track the smoothed global path while avoiding the dynamic obstacles. The inputs of the *n*-steps horizon MPC are the pose and velocity of the spacecraft, the next *n* points of the smoothed path, and the next *n* future positions of the dynamic obstacles (predicted through their current pose/velocity and dynamics). The spacecraft is constrained to remain inside the environment boundaries, and to not exceed the speed of 50 km/h.</li>
+          </ul>
+
+          <h2>Video examples:</h2>
+
+          <table>
+            <tr>
+              <td><b>Example 1</b></td>
+              <td><b>Example 2</b></td>
+              <td><b>Example 3</b></td>
+            </tr>
+            <tr>
+              <td><img src="assets/img/pdmar1.png"/></td>
+              <td><img src="assets/img/pdmar2.png"/></td>
+              <td><img src="assets/img/pdmar3.png"/></td>
+            </tr>
+            <tr>
+              <td><video src="assets/img/pdmar1.mp4"/></td>
+              <td><video src="assets/img/pdmar2.mp4"/></td>
+              <td><video src="assets/img/pdmar3.mp4"/></td>
+            </tr>
+          </table>
+
+      </div>
+    </div>
+    <!--/ Paper video. -->
+    <br>
+  </div>
+</section>
+
+
+</body>
+</html>
