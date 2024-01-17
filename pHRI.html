@@ -1,0 +1,145 @@
+---
+layout: default
+---
+
+<!-- <!DOCTYPE html> -->
+<html>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+        <div class="column has-text-centered">
+          <h1 align="center" class="title is-1 publication-title"><b>Skater Blob on Unity 3D (Virtual Reality I)</b></h1>
+          <div class="column is-full_width">
+            <!-- <h2 align="center" class="title is-4">Master Project</h2> -->
+          </div>
+          <br>
+          <div align="center" class="is-size-5 publication-authors">
+              <!-- <span class="author-block"> -->
+                <h5 align="center" class="title is-1 publication-title">
+                  <b>
+                <a href="https://ivanalberico.github.io/">Ivan Alberico</a></span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            </b>
+            <br><br>
+            <span class="author-block"><a href="https://cvg.ethz.ch/">Institute of Machine Tools and Manufacturing, ETH Zurich</a></span>
+            </h5>
+          </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- <div align="center"><img src="assets/img/mp.gif" width="90%" class="center"/></div> -->
+    <br><hr>
+      <!-- Description -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <br>
+        <h2 align="center" class="title is-3"><b>Description</b></h2>
+        <div class="content has-text-justified">
+          <p>
+            In this project, an admittance controller was implemented, a system linking input force to motion. 
+            Unlike the common impedance controller used by other groups, this approach suits scenarios where 
+            plant dynamics are less known or challenging to model accurately.
+            
+            <div align="center"><img src="assets/img/pHRI_admittancecontroller.png" width="100%" class="center"/></div>
+
+            The key advantage of the admittance controller lies in its ability to achieve high impedances with 
+            low control gains, overcoming limitations of the impedance controller. The controller interprets 
+            user-applied force as an input to a virtual model, generating a simulated motion represented by 
+            𝑚 ⋅ 𝑎 + 𝑏 ⋅ 𝑣 + 𝑘 ⋅ 𝑥 = 𝐹.
+            
+            This virtual motion is seamlessly integrated into the Haptic Paddle's control scheme using velocity 
+            control (PID). The end-effector experiences a blend of physical and virtual dynamics.
+            
+            The goal is to identify stable human-robot interaction regions, represented in an M-B-K plot. 
+            Equipped with a force sensor, the Haptic Paddle measures the necessary human-robot interaction 
+            force for the admittance controller. During the presentation, the admittance controller's concept, 
+            implementation, and performance will be discussed, comparing it to the simpler impedance controller.
+          </p>
+
+          <br>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- <div align="center"><img src="assets/img/mp.gif" width="90%" class="center"/></div> -->
+    <br><hr>
+      <!-- Description -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <br>
+        <h2 align="center" class="title is-3"><b>Description</b></h2>
+        <div class="content has-text-justified">
+          <p>
+            Within the scope of the project, a virtual wall was dynamically generated with a 15-degree inclination. 
+            The validation process involved experimenting with different mass values. The video demonstrations vividly 
+            showcase the expected trends: lower mass values, such as 0.1 kg, induce unstable behavior in the virtual 
+            wall, while a progressive increase in mass imparts greater stability.
+
+            <div align="center"><img src="assets/img/pHRI_admittcontroller_results.png" width="100%" class="center"/></div>
+            
+            A noteworthy observation from the simulations is the inverse relationship between mass and recovery time. 
+            Specifically, as the mass value increases, the haptic paddle takes a more deliberate pace to recover from 
+            exceeding the boundaries of the virtual wall. This phenomenon is attributed to the higher integration 
+            time associated with higher gains. The intricacies of these interactions are thoughtfully captured 
+            and presented in the accompanying video documentation.
+          </p>
+
+          <br>
+          <br>
+
+          Admittance controller with a virtual wall at 15°:
+          <video autoplay loop muted src="assets/img/pHRI_admittcontroller_virtualwall15°.mp4" alt="sym" width="100%" style="margin-top:10px;padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
+
+          <br>
+          <br>
+
+          M = 0.1 kg (instability):
+          <video autoplay loop muted src="assets/img/pHRI_M=01kg.mp4" alt="sym" width="100%" style="margin-top:10px;padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
+
+          <br>
+          <br>
+
+          M = 1 kg:
+          <video autoplay loop muted src="assets/img/pHRI_M=1kg.mp4" alt="sym" width="100%" style="margin-top:10px;padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
+
+          <br>
+          <br>
+
+          M = 100 kg:
+          <video autoplay loop muted src="assets/img/pHRI_M=100kg.mp4" alt="sym" width="100%" style="margin-top:10px;padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
+
+          <br>
+          <br>
+
+          M = 1000 kg (very stable performance):
+          <video autoplay loop muted src="assets/img/pHRI_M=1000kg.mp4" alt="sym" width="100%" style="margin-top:10px;padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
+
+          <br>
+          <br>
+        
+
+          <br>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+</body>
+</html>
