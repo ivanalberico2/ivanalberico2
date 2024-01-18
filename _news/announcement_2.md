@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2020-7-21
+date: 2018-8-25
 inline: true
 ---
 
-I have obtained my Bachelor's Degree in Automation Engineering at University of Bologna.
+I left for an exchange program at Tongji University in Shanghai, China. The exchange was part of a Double Degree program for my Bachelor's studies

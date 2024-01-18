@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2019-8-18
+date: 2017-9-18
 inline: true
 ---
 
-End of my Double Degree program in Shanghai, China.
+Beginning of my Bachelor's studies in Automation Engineering at University of Bologna
