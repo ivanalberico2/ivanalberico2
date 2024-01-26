@@ -5,6 +5,16 @@ layout: default
 <!-- <!DOCTYPE html> -->
 <html>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+      .justified-text {
+          text-align: justify;
+      }
+  </style>
+  <title>Justified Text Example</title>
+</head>
 
 <section class="hero">
   <div class="hero-body">
@@ -50,7 +60,7 @@ layout: default
         <br>
         <h2 align="center" class="title is-3"><b>Abstract</b></h2>
         <div class="content has-text-justified">
-          <p>
+          <p class="justified-text">
             In the realm of Mars robotics exploration, the groundbreaking Mid-Air Helicopter Delivery (MAHD) 
             mission concept represents a paradigm shift in Entry, Descent, and Landing (EDL), introducing a 
             revolutionary approach to deploy drones on the Red Planet. Unlike its predecessors, MAHD leverages 
@@ -66,9 +76,9 @@ layout: default
           <video autoplay loop muted src="assets/img/nasajpl_mars2020landing.mp4" alt="sym" width="100%" style="margin-top:10px;padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
           <br>
 
-            <p>  </p>
+            <p class="justified-text">  </p>
 
-          <p>
+          <p class="justified-text">
             In this work, we conduct an extensive analysis of the <a href="https://arxiv.org/abs/2010.06677">range-VIO</a> 
             method under the challenging conditions of MAHD. The investigation takes place in a custom simulation environment 
             designed to replicate the intricate complexities of Mars landscapes, including rough terrain with steep 
@@ -104,7 +114,7 @@ layout: default
           <br>
           <br>
 
-          <p>
+          <p class="justified-text">
             In the context of navigation, the main objective is to precisely control the jetpack's velocity, 
             maintaining it within the tight boundaries of 1 m/s. This critical phase of navigation begins after 
             heatshield separation, typically occurring at an altitude of around 12 kilometers above the Martian 
@@ -115,9 +125,9 @@ layout: default
           <div align="center"><img src=assets/img/nasajpl_MAHD.png border=0 width="100%" ></div>
           <br>
 
-            <p>  </p>
+            <p class="justified-text">  </p>
 
-          <p>
+          <p class="justified-text">
             MAHD introduces a range of compelling advantages when compared to conventional EDL approaches. 
             One of the standout features of MAHD is the absence of a lander. Unlike the Mars 2020 mission, 
             which relies on the sky-crane to execute the descent, MAHD optimizes the available space within 
@@ -151,7 +161,7 @@ layout: default
           <br>
           <br>
 
-          <p>
+          <p class="justified-text">
           In the context of navigation, the main objective is to precisely control the jetpack's velocity, 
           maintaining it within the tight boundaries of 1 m/s. This critical phase of navigation begins 
           after heatshield separation, typically occurring at an altitude of around 12 kilometers above 
@@ -171,9 +181,9 @@ layout: default
           <div align="center"><img src=assets/img/nasajpl_MAHD-landing.png border=0 width="100%" ></div>
           <br>
 
-            <p>  </p>
+            <p class="justified-text">  </p>
 
-          <p>
+          <p class="justified-text">
           The navigation challenges of the Mars Science Helicopter are multifaceted and intricate. 
           First and foremost, navigating over the highly non-planar Martian terrain, exemplified by 
           regions like Valles Marineris with its substantial altitude variations of ±4 km, as it is 
@@ -225,7 +235,7 @@ layout: default
         
         <div class="content has-text-justified">
           <br>  
-          <p>
+          <p class="justified-text">
             One of the contributions of this work lies in the development of a highly sophisticated 
             and comprehensive simulation environment tailored specifically for Mid-Air Helicopter 
             Delivery operations on Mars. The importance of such a simulation environment cannot 
@@ -233,15 +243,15 @@ layout: default
             this unique and challenging field of planetary exploration.
           </p>
 
-            <p>  </p>
+            <p class="justified-text">  </p>
 
           <br>
           <div align="center"><img src=assets/img/nasajpl_simulationEnv.png border=0 width="100%" ></div>
           <br>
 
-            <p>  </p>
+            <p class="justified-text">  </p>
 
-          <p>
+          <p class="justified-text">
           In order to achieve the highest level of precision in the novel simulation environment, 
           we use Digital Terrain Models (DTMs) of various Martian sites sourced from the High-Resolution 
           Imaging Science Experiment (<a href="https://www.uahirise.org">HiRISE</a>) website. 
@@ -263,7 +273,7 @@ layout: default
           a dedicated Python API.
           </p>
 
-            <p>  </p>
+            <p class="justified-text">  </p>
 
           <br>
           <div align="center"><img src=assets/img/nasajpl_datacollection.gif border=0 width="100%" ></div>
@@ -283,7 +293,7 @@ layout: default
           <br>
           <div class="content has-text-justified">
 
-            <p>
+            <p class="justified-text">
               The primary contribution of this thesis revolves around the integration 
               of 1D Laser Range Finder measurements into the visual-odometry framework 
               employed by the Mars Science Helicopter, denoted as xVIO. What sets this 
@@ -291,11 +301,11 @@ layout: default
               any assumptions regarding the terrain's planarity. 
             </p>
 
-            <p>  </p>
+            <p class="justified-text">  </p>
 
-            <p>  </p>
+            <p class="justified-text">  </p>
 
-            <p>
+            <p class="justified-text">
               <strong>Selection criteria for range-based features</strong>
 
               Before adding a range-feature to the SLAM tracks for the visual update, we have to 
@@ -308,15 +318,15 @@ layout: default
               iterations, with N being a parameter specified at run-time.</li>
             </p>
 
-            <p>  </p>
+            <p class="justified-text">  </p>
 
             <br>
             <div align="center"><img src=assets/img/nasajpl_rangeFeatInit.png border=0 width="100%" ></div>
             <br>
 
-            <p>  </p>
+            <p class="justified-text">  </p>
 
-            <p>
+            <p class="justified-text">
               <strong>Range-features initialization</strong>
               
               Once a pixel satisfies the conditions elucidated in the preceding section, it becomes 
@@ -332,7 +342,7 @@ layout: default
               follows the same pattern of any other SLAM feature.
             </p>
 
-            <p>  </p>
+            <p class="justified-text">  </p>
 
             <br>
             <div align="center"><img src=assets/img/nasajpl_scoreRangeFeat.png border=0 width="100%" ></div>
@@ -355,7 +365,7 @@ layout: default
           <br>
 
 
-          <p>
+          <p class="justified-text">
             <strong>Scale observability with range-feature initialization</strong>
             
             The primary objective of range-feature initialization revolves around testing the 
@@ -374,17 +384,17 @@ layout: default
             initialization, the scale factor remains unobserved.
           </p>
 
-          <p>  </p>
+          <p class="justified-text">  </p>
 
 
           <br>
           <div align="center"><img src=assets/img/nasajpl_scaleObservation.png border=0 width="100%" ></div>
           <br>
 
-          <p>  </p>
+          <p class="justified-text">  </p>
 
 
-          <p>
+          <p class="justified-text">
             <strong>Improved performance on MAHD trajectories</strong>
 
             This section serves as a more in-depth assessment within a single MAHD-like sequence, 
@@ -406,7 +416,7 @@ layout: default
             on the velocity from [1.613, 1.707, 3.653] m/s to [1.115, 0.983, 0.608] m/s.
           </p>
 
-          <p>  </p>
+          <p class="justified-text">  </p>
 
           <br>
           <div align="center"><img src=assets/img/nasajpl_performanceImprovement.png border=0 width="100%" ></div>
