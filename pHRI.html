@@ -22,14 +22,15 @@ layout: default
         <div class="column has-text-centered">
           <h1 align="center" class="title is-1 publication-title"><b>Admittance Controller on Hapitc Paddle</b></h1>
           <div class="column is-full_width">
-            <!-- <h2 align="center" class="title is-4">Master Project</h2> -->
           </div>
           <br>
           <div align="center" class="is-size-5 publication-authors">
-              <!-- <span class="author-block"> -->
                 <h5 align="center" class="title is-1 publication-title">
                   <b>
+                <span class="author-block">
                 <a href="https://ivanalberico.github.io/">Ivan Alberico</a></span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="author-block">
+                  <a href="https://www.linkedin.com/in/giulio-schiavi-439174221/">Giulio Schiavi</a></span></span>&nbsp;&nbsp;&nbsp;&nbsp;
             </b>
             <br><br>
             <span class="author-block"><a href="https://cvg.ethz.ch/">Rehabilitation Engineering Lab, ETH Zurich</a></span>
@@ -43,7 +44,6 @@ layout: default
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- <div align="center"><img src="assets/img/mp.gif" width="90%" class="center"/></div> -->
     <br><hr>
       <!-- Description -->
     <div class="columns is-centered has-text-centered">
@@ -51,13 +51,19 @@ layout: default
         <br>
         <h2 align="center" class="title is-3"><b>Description</b></h2>
         <div class="content has-text-justified">
+
+          <p class="justified-text">  </p>
           <p class="justified-text">
             In this project, an admittance controller was implemented, a system linking input force to motion. 
             Unlike the common impedance controller used by other groups, this approach suits scenarios where 
             plant dynamics are less known or challenging to model accurately.
-            
-            <div align="center"><img src="assets/img/pHRI_admittancecontroller.png" width="100%" class="center"/></div>
+          </p>
 
+          <p class="justified-text">  </p>
+          <div align="center"><img src="assets/img/pHRI_admittancecontroller.png" width="100%" class="center"/></div>
+          <p class="justified-text">  </p>
+
+          <p class="justified-text">
             The key advantage of the admittance controller lies in its ability to achieve high impedances with 
             low control gains, overcoming limitations of the impedance controller. The controller interprets 
             user-applied force as an input to a virtual model, generating a simulated motion represented by 
@@ -84,7 +90,6 @@ layout: default
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- <div align="center"><img src="assets/img/mp.gif" width="90%" class="center"/></div> -->
     <br><hr>
       <!-- Description -->
     <div class="columns is-centered has-text-centered">
@@ -92,14 +97,20 @@ layout: default
         <br>
         <h2 align="center" class="title is-3"><b>Results</b></h2>
         <div class="content has-text-justified">
+
+          <p class="justified-text">  </p>
           <p class="justified-text">
             Within the scope of the project, a virtual wall was dynamically generated with a 15-degree inclination. 
             The validation process involved experimenting with different mass values. The video demonstrations vividly 
             showcase the expected trends: lower mass values, such as 0.1 kg, induce unstable behavior in the virtual 
             wall, while a progressive increase in mass imparts greater stability.
+          </p>
 
-            <div align="center"><img src="assets/img/pHRI_admittcontroller_results.png" width="100%" class="center"/></div>
-            
+          <p class="justified-text">  </p>
+          <div align="center"><img src="assets/img/pHRI_admittcontroller_results.png" width="100%" class="center"/></div>
+          <p class="justified-text">  </p>
+
+          <p class="justified-text"> 
             A noteworthy observation from the simulations is the inverse relationship between mass and recovery time. 
             Specifically, as the mass value increases, the haptic paddle takes a more deliberate pace to recover from 
             exceeding the boundaries of the virtual wall. This phenomenon is attributed to the higher integration 
@@ -112,30 +123,35 @@ layout: default
 
           Admittance controller with a virtual wall at 15°:
           <video autoplay loop muted src="assets/img/pHRI_admittcontroller_virtualwall15°.mp4" alt="sym" width="100%" style="margin-top:10px;padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
+          <p class="justified-text">  </p>
 
           <br>
           <br>
 
           M = 0.1 kg (instability):
           <video autoplay loop muted src="assets/img/pHRI_M=01kg.mp4" alt="sym" width="100%" style="margin-top:10px;padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
-
+          <p class="justified-text">  </p>
+          
           <br>
           <br>
 
           M = 1 kg:
           <video autoplay loop muted src="assets/img/pHRI_M=1kg.mp4" alt="sym" width="100%" style="margin-top:10px;padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
+          <p class="justified-text">  </p>
 
           <br>
           <br>
 
           M = 100 kg:
           <video autoplay loop muted src="assets/img/pHRI_M=100kg.mp4" alt="sym" width="100%" style="margin-top:10px;padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
+          <p class="justified-text">  </p>
 
           <br>
           <br>
 
           M = 1000 kg (very stable performance):
           <video autoplay loop muted src="assets/img/pHRI_M=1000kg.mp4" alt="sym" width="100%" style="margin-top:10px;padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
+          <p class="justified-text">  </p>
 
           <br>
           <br>

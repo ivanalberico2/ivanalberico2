@@ -22,11 +22,9 @@ layout: default
         <div class="column has-text-centered">
           <h1 align="center" class="title is-1 publication-title"><b>End-2-End Self-Supervised SLAM</b></h1>
           <div class="column is-full_width">
-            <!-- <h2 align="center" class="title is-4">Master Project</h2> -->
           </div>
           <br>
           <div align="center" class="is-size-5 publication-authors">
-              <!-- <span class="author-block"> -->
                 <h5 align="center" class="title is-1 publication-title">
                   <b>
                 <a href="https://ivanalberico.github.io/">Ivan Alberico</a></span></span>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -52,7 +50,6 @@ layout: default
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- <div align="center"><img src="assets/img/mp.gif" width="90%" class="center"/></div> -->
     <br><hr>
       <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
@@ -60,6 +57,8 @@ layout: default
         <br>
         <h2 align="center" class="title is-3"><b>Abstract</b></h2>
         <div class="content has-text-justified">
+
+          <p class="justified-text">  </p>
           <p class="justified-text">
             Dense monocular SLAM is a challenging task since 3D structures reconstructed from monocular images are often sparse and It
             is not easy to recover reliable 3D information for non-textured regions in real-time. The use of a depth prediction network within a
@@ -95,6 +94,8 @@ layout: default
           <h2 align="center" class="title is-3"><b>Introduction</b></h2>
           <br>
           <div class="content has-text-justified">
+
+            <p class="justified-text">  </p>
             <p class="justified-text">
               A drawback of supervised deep networks, is that they need large labeled datasets to be 
               properly trained. Creating labeled datasets for each of the countless SLAM applications 
@@ -108,15 +109,21 @@ layout: default
                 meaningful gradients.</li>
               <li>High degree of rotational movement in camera motion, which acts as noise.</li>
               <li>Scale inconsistency of pose estimates over different samples</li>
+            <br>
+            </p>
 
+            <p class="justified-text">  </p>
+
+            <p class="justified-text">   
               In this work, we outline the following contributions:
 
               <li>A self-supervised SLAM system based on PointFusion with gradient based learning.</li>
               <li>Implementation of an online adaptation module to refine our self-supervised depth predictions.</li>
               <li>Investigation into uncertainty predictions, scale learning and output fine-tuning to improve 
                 depth estimation and reconstruction.</li>
-            <br>
             </p>
+
+
           </div>
         </div>
       </div>
@@ -136,20 +143,21 @@ layout: default
               depth estimation through novel view synthesis. We first explain the basic building blocks for self-supervised 
               depth estimation and then present self-supervision from the global point cloud created by the 
               <a href="https://arxiv.org/pdf/1711.10871.pdf">PointFusion</a> method.
+            </p>
 
-              <br>
-              <div align="center"><img src="assets/img/3dvision_FullModel.PNG" width="100%" class="center"/></div>
-              <br>
+            <p class="justified-text">  </p>
+            <div align="center"><img src="assets/img/3dvision_FullModel.PNG" width="100%" class="center"/></div>
+            <p class="justified-text">  </p>
 
+            <p class="justified-text">  
               Due to the differentiable nature of gradSLAM, we can leverage the global reconstructed pointcloud to refine 
               our depth maps in an online fashion. This task can be easily coupled with the novel view synthesis framework 
               from the previous section. However, since we will compare pointclouds, this supervision incurs additional cost 
               at each refinement step. The global pointcloud $G$ contains points that are updated after online adaption has 
               been applied to the previous key-frames. Subsequently, these points are also refined through depth map fusion 
-              within the PointFusion based SLAM. Therefore, these points can be used to supervise future key-frames. 
-
-            <br>
+              within the PointFusion based SLAM. Therefore, these points can be used to supervise future key-frames.
             </p>
+
           </div>
         </div>
       </div>
@@ -165,49 +173,65 @@ layout: default
           <div class="content has-text-justified">
             <p class="justified-text">
               In this section we provide experimental results to validate the effectiveness of online refinement module along
-              with the corresponding 3D reconstruction from PointFusion. Note that all experiments were carried out with median 
-              scaling unless otherwise specified.
+              with the corresponding 3D reconstruction from PointFusion. 
+
+<p class="justified-text">  </p>
 
 <table><tr>
   <td>
     Depth predictions and reconstructed point clouds of a pair of key-frames taken from the ICL dataset.
+    <p class="justified-text">  </p>
      <b>Left</b>: Ground truth <b>Center</b>: No online-refinement <b>Right</b>: Online-refinement
-     <div align="center"><img src="assets/img/3dvision_ICL_Results.PNG" width="100%" class="center"/></div>
-
+     <div align="center"><img src="assets/img/3dvision_ICL_Results.PNG" width="70%" class="center"/></div>
   </td>
 </tr></table> 
+
+<p class="justified-text">  </p>
+<p class="justified-text">  </p>
 
 <table><tr>
   <td>
     Depth predictions and reconstructed point clouds of a pair of key-frames taken from the TUM dataset. 
+    <p class="justified-text">  </p>
     <b>Left</b>: Ground truth <b>Center</b>: No online-refinement <b>Right</b>: Online-refinement
-    <div align="center"><img src="assets/img/3dvision_TUM_Results.PNG" width="100%" class="center"/></div>
+    <div align="center"><img src="assets/img/3dvision_TUM_Results.PNG" width="70%" class="center"/></div>
   </td>
   </tr></table>  
 
+  <p class="justified-text">  </p>
+  <p class="justified-text">  </p>
+  <p class="justified-text">  </p>
 
-  An addition to our method consists of integrating weak-supervision into the pipeline through ground truth depth 
+  <p class="justified-text"> An addition to our method consists of integrating weak-supervision into the pipeline through ground truth depth 
   information. We wanted to investigate the effectiveness of having pseudo-labels from old classic techniques, that 
   could act as a supervisory signal for the depth predictions. However, due to time constraints we relied on sparse 
   ground truth depth labels. In our case we used only 1% of the total amount of pixels. The weak supervision is 
   integrated in our model through an L1 loss computed between the sparse ground truth values and the depth predictions 
-  from our network.
+  from our network. </p>
+  
+  <p class="justified-text">  </p>
+  <p class="justified-text">  </p>
 
 <table><tr>
   <td>
     The sequence of images shows a comparison between the ground truth depth map and the depth prediction after including
     weak-supervision into the pipeline (1% of the pixels). The selected keyframe is taken from the ICL-NUIM dataset. 
     (a) Ground truth depth map (b) Sparse ground truth values (c) Predicted depth map.
-     <div align="center"><img src="assets/img/3dvision_weak-supervision.png" width="100%" class="center"/></div>
+    <p class="justified-text">  </p>
+     <div align="center"><img src="assets/img/3dvision_weak-supervision.png" width="70%" class="center"/></div>
 
   </td>
 </tr></table>
+
+<p class="justified-text">  </p>
+<p class="justified-text">  </p>
 
 <table><tr>
   <td>
     Comparison between global pointcloud reconstructions without (left) and with (right) weak supervision of a sequence of
     frames taken from the ICL-NUIM dataset.
-     <div align="center"><img src="assets/img/3dvision_comparison-demo-ICL.png" width="100%" class="center"/></div>
+    <p class="justified-text">  </p>
+     <div align="center"><img src="assets/img/3dvision_comparison-demo-ICL.png" width="70%" class="center"/></div>
 
   </td>
 </tr></table>
