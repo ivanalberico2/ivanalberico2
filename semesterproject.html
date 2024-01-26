@@ -5,30 +5,30 @@ layout: default
 <!-- <!DOCTYPE html> -->
 <html>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+      .justified-text {
+          text-align: justify;
+      }
+  </style>
+  <title>Justified Text Example</title>
+</head>
 
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <!-- <div class="columns is-centered">
-        <div class="column is-7 has-text-centered">
-          <img src="media/nice-slam/nice-slam-logo2.png" alt="NICE-SLAM"/>
-        </div>
-      </div> -->
         <div class="column has-text-centered">
-          <!-- <h1 class="title is-1 publication-title"><img src="media/nice-slam/like.png" width="90">NICE-SLAM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>Neural Implicit Scalable Encoding for SLAM</h1> -->
-          <!-- <h1 class="title is-1 publication-title"><img src="media/openscene/logo.png" width="70">OpenScene&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1> -->
           <h1 align="center" class="title is-1 publication-title"><b>Learning to Generate Events <br>using Spiking Neural Networks</b></h1>
           <div class="column is-full_width">
-            <!-- <h2 align="center" class="title is-4">Master Project</h2> -->
           </div>
           <br>
           <div align="center" class="is-size-5 publication-authors">
-              <!-- <span class="author-block"> -->
                 <h5 align="center" class="title is-1 publication-title">
                   <b>
-                <!-- <a href="https://pengsongyou.github.io">Songyou Peng</a><sup>1,2,3 * </sup></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
                 <a href="https://ivanalberico.github.io/">Ivan Alberico</a></span></span>&nbsp;&nbsp;&nbsp;&nbsp;
-              <!-- </span> -->
+
               <span class="author-block">
               <a href="https://danielgehrig18.github.io/">Daniel Gehrig</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
               </span>
@@ -48,7 +48,6 @@ layout: default
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- <div align="center"><img src="assets/img/mp.gif" width="90%" class="center"/></div> -->
     <br><hr>
       <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
@@ -56,7 +55,7 @@ layout: default
         <br>
         <h2 align="center" class="title is-3"><b>Abstract</b></h2>
         <div class="content has-text-justified">
-          <p>
+          <p class="justified-text">
             The recent advent of event cameras in computer vision applications has significantly increased 
             the performance of traditional methods, by leveraging the outstanding advantages of these novel 
             sensors over conventional cameras. If on one hand the event-based techniques have achieved 
@@ -70,8 +69,9 @@ layout: default
             <li>a visual inspection of the generated events compared to the ground truth ones;</li>
             <li>an in-depth analysis of the event rates of the generated events;</li>
             <li>an object classification task validated on the N-Caltech101 dataset.</li>
-
           </p>
+
+          <p class="justified-text">  </p>
 
           <br>
         </div>
@@ -89,7 +89,7 @@ layout: default
 
         <div class="content has-text-justified">
           <br>  
-          <p>
+          <p class="justified-text">
             Research in this area has shown that computer vision techniques based on 
             event data have achieved outstanding results, leading to a growing interest 
             in this field. However, one the main limitations of these methods is that 
@@ -116,10 +116,13 @@ layout: default
               events generated with the proposed network perform better than 
               <a href="https://tub-rip.github.io/eventvision2021/papers/2021CVPRW_V2E_From_Video_Frames_to_Realistic_DVS_Events.pdf">Vid2E</a> 
               in terms of accuracy.</li>
-              
-            <div align="center"><img src="assets/img/semesterproject_generalidea.png" width="80%" class="center"/></div>
-
           </p>
+
+          <p class="justified-text">  </p>
+          <div align="center"><img src="assets/img/semesterproject_generalidea.png" width="80%" class="center"/></div>
+          <p class="justified-text">  </p>
+              
+
         </div>
       </div>
     </div>
@@ -131,9 +134,8 @@ layout: default
           <br>
           <h2 align="center" class="title is-3"><b>Method</b></h2>
           <br>
-          <!-- <div align="center"><img src="assets/img/pvcnn_rq.png" width="90%" class="center"/></div> -->
           <div class="content has-text-justified">
-            <p>
+            <p class="justified-text">
               In this section we present Spike-ESIM, a novel Spiking Neural Network for event 
               generation from video frames. The proposed network is different from traditional 
               Spiking Neural Networks in the way that it does not take as input trains of 
@@ -142,9 +144,14 @@ layout: default
               we skip the Post Synaptic Potential layer at the initial stage of the network, 
               which normally convolves the input spikes of each node with the temporal ε(·) 
               kernel to generate the potentials.
-              
-              <div align="center"><img src="assets/img/semesterproject_dynamicsneuron.png" width="60%" class="center"/></div>
-              
+            </p>
+  
+            <p class="justified-text">  </p>              
+            <div align="center"><img src="assets/img/semesterproject_dynamicsneuron.png" width="60%" class="center"/></div>  
+            <p class="justified-text">  </p>
+
+
+            <p class="justified-text">
               The network is a branched architecture, with each branch modeling a specific 
               polarity of the output event tensor. Modeling the event generation process with a 
               single network would not be feasible, since we need to account for both positive 
@@ -157,11 +164,12 @@ layout: default
               layer followed by a spike function module, this latter being the one that actually 
               generates events by thresholding the scaled differences of brightness according to 
               the membrane potential hyper-parameter.
-
-            <div align="center"><img src="assets/img/semesterproject_spikeESIMarch.png" width="60%" class="center"/></div>
-
-            <br>
             </p>
+
+            <p class="justified-text">  </p>
+            <div align="center"><img src="assets/img/semesterproject_spikeESIMarch.png" width="60%" class="center"/></div>
+            <p class="justified-text">  </p>
+
           </div>
         </div>
       </div>
@@ -173,9 +181,9 @@ layout: default
           <br>
           <h2 align="center" class="title is-3"><b>Results</b></h2>
           <br>
-          <!-- <div align="center"><img src="assets/img/pvcnn_rq.png" width="90%" class="center"/></div> -->
           <div class="content has-text-justified">
 
+          <p class="justified-text">
             In this chapter we provide experimental results to validate the effectiveness of the 
             proposed method. A qualitative evaluation is performed by visually comparing the 
             generated events to the ground truth events.
@@ -185,9 +193,16 @@ layout: default
             modeled in the scene is strongly dependent on the membrane threshold that we set before 
             training, and its value is extremely important as it strikes a balance between how much 
             noise we allow in the results and how well we want to model the real events
+          </p>
             
-            <div align="center"><img src="assets/img/semesterproject_result1.png" width="60%" class="center"/></div>
-            <div align="center"><img src="assets/img/semesterproject_result2.png" width="60%" class="center"/></div>
+
+          <p class="justified-text">  </p>
+          <div align="center"><img src="assets/img/semesterproject_result1.png" width="60%" class="center"/></div>
+
+          <p class="justified-text">  </p>
+          <div align="center"><img src="assets/img/semesterproject_result2.png" width="60%" class="center"/></div>
+
+          <p class="justified-text">  </p>
 
           </div>
           <br>

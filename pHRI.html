@@ -5,6 +5,16 @@ layout: default
 <!-- <!DOCTYPE html> -->
 <html>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+      .justified-text {
+          text-align: justify;
+      }
+  </style>
+  <title>Justified Text Example</title>
+</head>
 
 <section class="hero">
   <div class="hero-body">
@@ -41,7 +51,7 @@ layout: default
         <br>
         <h2 align="center" class="title is-3"><b>Description</b></h2>
         <div class="content has-text-justified">
-          <p>
+          <p class="justified-text">
             In this project, an admittance controller was implemented, a system linking input force to motion. 
             Unlike the common impedance controller used by other groups, this approach suits scenarios where 
             plant dynamics are less known or challenging to model accurately.
@@ -82,7 +92,7 @@ layout: default
         <br>
         <h2 align="center" class="title is-3"><b>Results</b></h2>
         <div class="content has-text-justified">
-          <p>
+          <p class="justified-text">
             Within the scope of the project, a virtual wall was dynamically generated with a 15-degree inclination. 
             The validation process involved experimenting with different mass values. The video demonstrations vividly 
             showcase the expected trends: lower mass values, such as 0.1 kg, induce unstable behavior in the virtual 

@@ -5,6 +5,16 @@ layout: default
 <!-- <!DOCTYPE html> -->
 <html>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+      .justified-text {
+          text-align: justify;
+      }
+  </style>
+  <title>Justified Text Example</title>
+</head>
 
 <section class="hero">
   <div class="hero-body">
@@ -50,7 +60,7 @@ layout: default
         <br>
         <h2 align="center" class="title is-3"><b>Abstract</b></h2>
         <div class="content has-text-justified">
-          <p>
+          <p class="justified-text">
             Dense monocular SLAM is a challenging task since 3D structures reconstructed from monocular images are often sparse and It
             is not easy to recover reliable 3D information for non-textured regions in real-time. The use of a depth prediction network within a
             SLAM pipeline has been proposed to improve dense reconstructions (<a href="https://www.computer.org/csdl/proceedings-article/cvpr/2017/0457g565/12OmNzTH0Qa">CNN-SLAM</a>), 
@@ -85,7 +95,7 @@ layout: default
           <h2 align="center" class="title is-3"><b>Introduction</b></h2>
           <br>
           <div class="content has-text-justified">
-            <p>
+            <p class="justified-text">
               A drawback of supervised deep networks, is that they need large labeled datasets to be 
               properly trained. Creating labeled datasets for each of the countless SLAM applications 
               is a laborious and expensive effort, which is why research has recently focused on some 
@@ -121,7 +131,7 @@ layout: default
           <h2 align="center" class="title is-3"><b>Method</b></h2>
           <br>
           <div class="content has-text-justified">
-            <p>
+            <p class="justified-text">
               In this section we provide a detailed insight into our online adaption module which is basically self-supervised 
               depth estimation through novel view synthesis. We first explain the basic building blocks for self-supervised 
               depth estimation and then present self-supervision from the global point cloud created by the 
@@ -153,7 +163,7 @@ layout: default
           <h2 align="center" class="title is-3"><b>Results</b></h2>
           <br>
           <div class="content has-text-justified">
-            <p>
+            <p class="justified-text">
               In this section we provide experimental results to validate the effectiveness of online refinement module along
               with the corresponding 3D reconstruction from PointFusion. Note that all experiments were carried out with median 
               scaling unless otherwise specified.

@@ -16,6 +16,17 @@ layout: default
   <title>Justified Text Example</title>
 </head>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Size Example</title>
+  <style>
+      .bigger {
+          font-size: larger; /* You can use other size values like 'x-large', 'xx-large', '30px', etc. */
+      }
+  </style>
+</head>
+
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
@@ -41,7 +52,7 @@ layout: default
             </b>
             <br><br>
             <span class="author-block"><a href="https://www.jpl.nasa.gov/">NASA Jet Propulsion Laboratory  </a></span>
-            <span>    </span>
+            <span>   |  </span>
             <span class="author-block"><a href="https://rpg.ifi.uzh.ch/index.html">   Robotics and Perception Group (RPG)</a></span>
             </h5>
           </div>
@@ -60,6 +71,9 @@ layout: default
         <br>
         <h2 align="center" class="title is-3"><b>Abstract</b></h2>
         <div class="content has-text-justified">
+
+          <p class="justified-text">  </p>
+
           <p class="justified-text">
             In the realm of Mars robotics exploration, the groundbreaking Mid-Air Helicopter Delivery (MAHD) 
             mission concept represents a paradigm shift in Entry, Descent, and Landing (EDL), introducing a 
@@ -76,7 +90,7 @@ layout: default
           <video autoplay loop muted src="assets/img/nasajpl_mars2020landing.mp4" alt="sym" width="100%" style="margin-top:10px;padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
           <br>
 
-            <p class="justified-text">  </p>
+          <p class="justified-text">  </p>
 
           <p class="justified-text">
             In this work, we conduct an extensive analysis of the <a href="https://arxiv.org/abs/2010.06677">range-VIO</a> 
@@ -125,7 +139,7 @@ layout: default
           <div align="center"><img src=assets/img/nasajpl_MAHD.png border=0 width="100%" ></div>
           <br>
 
-            <p class="justified-text">  </p>
+          <p class="justified-text">  </p>
 
           <p class="justified-text">
             MAHD introduces a range of compelling advantages when compared to conventional EDL approaches. 
@@ -181,7 +195,7 @@ layout: default
           <div align="center"><img src=assets/img/nasajpl_MAHD-landing.png border=0 width="100%" ></div>
           <br>
 
-            <p class="justified-text">  </p>
+          <p class="justified-text">  </p>
 
           <p class="justified-text">
           The navigation challenges of the Mars Science Helicopter are multifaceted and intricate. 
@@ -243,13 +257,13 @@ layout: default
             this unique and challenging field of planetary exploration.
           </p>
 
-            <p class="justified-text">  </p>
+          <p class="justified-text">  </p>
 
           <br>
           <div align="center"><img src=assets/img/nasajpl_simulationEnv.png border=0 width="100%" ></div>
           <br>
 
-            <p class="justified-text">  </p>
+          <p class="justified-text">  </p>
 
           <p class="justified-text">
           In order to achieve the highest level of precision in the novel simulation environment, 
@@ -273,7 +287,7 @@ layout: default
           a dedicated Python API.
           </p>
 
-            <p class="justified-text">  </p>
+          <p class="justified-text">  </p>
 
           <br>
           <div align="center"><img src=assets/img/nasajpl_datacollection.gif border=0 width="100%" ></div>
@@ -301,12 +315,13 @@ layout: default
               any assumptions regarding the terrain's planarity. 
             </p>
 
-            <p class="justified-text">  </p>
+          <p class="justified-text">  </p>
 
-            <p class="justified-text">  </p>
+          <p class="justified-text">  </p>
 
             <p class="justified-text">
-              <strong>Selection criteria for range-based features</strong>
+              <span class="bigger"><strong>Selection criteria for range-based features</strong></span> 
+              <p class="justified-text">  </p>
 
               Before adding a range-feature to the SLAM tracks for the visual update, we have to 
               make sure that the feature represents a corner and that it can be tracked over time. 
@@ -318,16 +333,17 @@ layout: default
               iterations, with N being a parameter specified at run-time.</li>
             </p>
 
-            <p class="justified-text">  </p>
+          <p class="justified-text">  </p>
 
             <br>
             <div align="center"><img src=assets/img/nasajpl_rangeFeatInit.png border=0 width="100%" ></div>
             <br>
 
-            <p class="justified-text">  </p>
+          <p class="justified-text">  </p>
 
             <p class="justified-text">
-              <strong>Range-features initialization</strong>
+              <span class="bigger"><strong>Range-features initialization</strong></span>
+              <p class="justified-text">  </p>
               
               Once a pixel satisfies the conditions elucidated in the preceding section, it becomes 
               a candidate for inclusion in the feature matches and subsequently undergoes tracking, 
@@ -348,6 +364,11 @@ layout: default
             <div align="center"><img src=assets/img/nasajpl_scoreRangeFeat.png border=0 width="100%" ></div>
             <br>
 
+
+            <p class="justified-text">  </p>
+            <p class="justified-text">xVIO demo with range-features initialization (red: ranged-feature, green: normal SLAM feature) </p>
+            <p class="justified-text">  </p>
+
             <br>
             <div align="center"><img src=assets/img/nasajpl_xVIOtracking.gif border=0 width="100%" ></div>
             <br>
@@ -366,7 +387,8 @@ layout: default
 
 
           <p class="justified-text">
-            <strong>Scale observability with range-feature initialization</strong>
+            <span class="bigger"><strong>Scale observability with range-feature initialization</strong></span>
+            <p class="justified-text">  </p>
             
             The primary objective of range-feature initialization revolves around testing the 
             algorithm's effectiveness for scale observability. The trajectory employed for 
@@ -384,18 +406,20 @@ layout: default
             initialization, the scale factor remains unobserved.
           </p>
 
-          <p class="justified-text">  </p>
+        <p class="justified-text">  </p>
 
 
           <br>
           <div align="center"><img src=assets/img/nasajpl_scaleObservation.png border=0 width="100%" ></div>
           <br>
+          <p class="justified-text">(a) without ranged-feature initialization (b) with ranged-feature initialization </p>
 
-          <p class="justified-text">  </p>
+        <p class="justified-text">  </p>
 
 
           <p class="justified-text">
-            <strong>Improved performance on MAHD trajectories</strong>
+            <span class="bigger"><strong>Improved performance on MAHD trajectories</strong></span>
+            <p class="justified-text">  </p>
 
             This section serves as a more in-depth assessment within a single MAHD-like sequence, 
             aiming to highlight the impact of range-feature initialization. The primary focus is 
@@ -421,6 +445,7 @@ layout: default
           <br>
           <div align="center"><img src=assets/img/nasajpl_performanceImprovement.png border=0 width="100%" ></div>
           <br>
+          <p class="justified-text">(a) without ranged-feature initialization (b) with ranged-feature initialization </p>
 
           <br>
         </div>
