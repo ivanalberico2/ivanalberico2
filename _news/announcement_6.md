@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2021-9-23
+date: 2023-10-17
 inline: true
 ---
 
-I started my position as Teaching Assistant at the <a href="https://relab.ethz.ch/">Rehabilitation Engineering Lab</a> at ETH Zurich for the course of <a href="https://relab.ethz.ch/education/courses/phri.html/">Physical Human Robot Interaction</a> (pHRI)
+I graduated from my Master's at ETH after defending my Thesis on <i>Vision-Based Navigation for Mid-Air Helicopter Delivery on Mars</i>

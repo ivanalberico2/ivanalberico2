@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2018-8-25
+date: 2021-7-5
 inline: true
 ---
 
-I left for an exchange program at Tongji University in Shanghai, China. The exchange was part of a Double Degree program for my Bachelor's studies
+I took part to the <a href="https://robotics-summerschool.ethz.ch">Robotics Summer School</a> organized by the <a href="https://center-for-robotics.ethz.ch/">RobotX</a> initiative at ETH Zurich

@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2020-9-14
+date: 2022-4-11
 inline: true
 ---
 
-I have started my MSc program in <i>Robotics, Systems and Control</i> at ETH Zürich
+I joined <a href="https://verity.net/">Verity AG</a> in Zürich as a <i>System and Estimation engineer</i>

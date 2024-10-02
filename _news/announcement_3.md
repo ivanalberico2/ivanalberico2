@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2020-7-21
+date: 2021-9-23
 inline: true
 ---
 
-I completed my BSc studies after defending my Thesis named <i>Defect Detection in the Tyre Manufacturing Process using Convolutional Neural Networks</i> (project in partnership with <a href="https://www.pirelli.com/tyres/en-ww/car/homepage">Pirelli Tyres S.p.A.</a>)
+I started my position as Teaching Assistant at the <a href="https://relab.ethz.ch/">Rehabilitation Engineering Lab</a> at ETH Zurich for the course of <a href="https://relab.ethz.ch/education/courses/phri.html/">Physical Human Robot Interaction</a> (pHRI)

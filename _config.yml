@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Ivan Alberico's personal website # the website title (if blank, full name will be used instead)
+title: About me # the website title (if blank, full name will be used instead)
 first_name: Ivan
 middle_name:
 last_name: Alberico
