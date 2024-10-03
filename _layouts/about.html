@@ -56,11 +56,6 @@ layout: default
           {%- endif %}
           <br> -->
 
-          {% if page.news -%}
-          <!-- News -->
-            {%- include news.html %}
-          {%- endif %}
-
           {% if page.selected_papers -%}
             <!-- Selected papers -->
             {%- include selected_papers.html %}
@@ -72,6 +67,11 @@ layout: default
           </p>
           {%- endif %}
           <br>
+
+          {% if page.news -%}
+          <!-- News -->
+            {%- include news.html %}
+          {%- endif %}
 
           {% if page.projects -%}
           <p><!-- Selected papers -->
