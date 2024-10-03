@@ -22,7 +22,8 @@ table {
 }
 
 a, table.table a {
-  color: var(--global-theme-color);
+  // color: var(--global-theme-color);
+  color: var(blue-color-dark);
   &:hover {
     color: var(--global-theme-color);
     text-decoration: underline;
