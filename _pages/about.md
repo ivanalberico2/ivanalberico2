@@ -29,9 +29,3 @@ projects: true
 </div>
 
 <div style="text-align: justify;"><br></div>
-
-**Email**: ivanalberico1998@gmail.com  <br>
-**Github**: [ivanalberico](https://github.com/ivanalberico)  <br>
-**Linkedin**: [Ivan Alberico](https://www.linkedin.com/in/ivan-alberico-5793581a4/)
-
-
