@@ -19,7 +19,7 @@ projects: true
 ---
 
 <div style="text-align: justify; font-family: Arial, sans-serif; font-size: 14px;">
-  I am currently a Research Assistant at Robotics and Perception Group working on event-based vision for robotics, advised by Prof. Davide Scaramuzza. I have successfully completed my MSc in <a href="https://master-robotics.ethz.ch/">Robotics, Systems, and Control</a> at <a href="https://ethz.ch/en.html">ETH Zürich</a> in October 2023. I am currently seeking admission into a PhD program to further advance my academic career and contribute to cutting-edge research in the areas of computer vision, deep learning and state estimation.<br>
+  I am currently a Research Assistant at the Robotics and Perception Group working on event-based vision for robotics, advised by Prof. Davide Scaramuzza. I have successfully completed my MSc in <a href="https://master-robotics.ethz.ch/">Robotics, Systems, and Control</a> at <a href="https://ethz.ch/en.html">ETH Zürich</a> in October 2023. I am currently seeking admission into a PhD program to further advance my academic career and contribute to cutting-edge research in the areas of computer vision, deep learning and state estimation.<br>
 </div>
 
 <div style="text-align: justify;"><br></div>
